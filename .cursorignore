@@ -1,0 +1,4 @@
+# Allow AI editing of .env files
+# This overrides default Cursor behavior
+!.env
+!**/.env
