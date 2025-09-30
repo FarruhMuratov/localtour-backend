@@ -1,214 +1,80 @@
-[debug] [2025-09-28T01:06:04.386Z] ----------------------------------------------------------------------
-[debug] [2025-09-28T01:06:04.388Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
-[debug] [2025-09-28T01:06:04.388Z] CLI Version:   14.17.0
-[debug] [2025-09-28T01:06:04.388Z] Platform:      win32
-[debug] [2025-09-28T01:06:04.388Z] Node Version:  v22.18.0
-[debug] [2025-09-28T01:06:04.389Z] Time:          Sun Sep 28 2025 06:06:04 GMT+0500 (Узбекистан, стандартное время)
-[debug] [2025-09-28T01:06:04.389Z] ----------------------------------------------------------------------
+[debug] [2025-09-30T21:01:54.142Z] ----------------------------------------------------------------------
+[debug] [2025-09-30T21:01:54.145Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2025-09-30T21:01:54.145Z] CLI Version:   14.17.0
+[debug] [2025-09-30T21:01:54.145Z] Platform:      win32
+[debug] [2025-09-30T21:01:54.145Z] Node Version:  v22.18.0
+[debug] [2025-09-30T21:01:54.145Z] Time:          Wed Oct 01 2025 02:01:54 GMT+0500 (Узбекистан, стандартное время)
+[debug] [2025-09-30T21:01:54.146Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2025-09-28T01:06:04.559Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2025-09-28T01:06:04.559Z] > authorizing via signed-in user (leaglel1910@gmail.com)
-[info] i  emulators: Starting emulators: functions, hosting, extensions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting, extensions"}}
-[debug] [2025-09-28T01:06:04.563Z] Checked if tokens are valid: false, expires at: 1759022366432
-[debug] [2025-09-28T01:06:04.563Z] Checked if tokens are valid: false, expires at: 1759022366432
-[debug] [2025-09-28T01:06:04.564Z] > refreshing access token with scopes: []
-[debug] [2025-09-28T01:06:04.565Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
-[debug] [2025-09-28T01:06:04.565Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
-[debug] [2025-09-28T01:06:04.903Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
-[debug] [2025-09-28T01:06:04.903Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
-[debug] [2025-09-28T01:06:04.910Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/localtour-backend [none]
-[debug] [2025-09-28T01:06:06.069Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/localtour-backend 200
-[debug] [2025-09-28T01:06:06.069Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/localtour-backend {"projectNumber":"475203221519","projectId":"localtour-backend","lifecycleState":"ACTIVE","name":"Localtour-backend","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-09-23T20:19:35.270466Z"}
-[debug] [2025-09-28T01:06:06.080Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2025-09-28T01:06:06.080Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2025-09-28T01:06:06.080Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
-[debug] [2025-09-28T01:06:06.084Z] Emulator locator file path: C:\Users\User\AppData\Local\Temp\hub-localtour-backend.json
-[debug] [2025-09-28T01:06:06.084Z] [hub] writing locator at C:\Users\User\AppData\Local\Temp\hub-localtour-backend.json
-[debug] [2025-09-28T01:06:06.092Z] [Extensions] Started Extensions emulator, this is a noop.
-[debug] [2025-09-28T01:06:06.096Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2025-09-28T01:06:06.096Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2025-09-28T01:06:06.096Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2025-09-28T01:06:06.096Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
-[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: apphosting, auth, firestore, database, pubsub, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mapphosting, auth, firestore, database, pubsub, storage, dataconnect\u001b[22m"}}
-[debug] [2025-09-28T01:06:06.108Z] defaultcredentials: writing to file C:\Users\User\AppData\Roaming\firebase\leaglel1910_gmail_com_application_default_credentials.json
-[debug] [2025-09-28T01:06:06.110Z] Setting GAC to C:\Users\User\AppData\Roaming\firebase\leaglel1910_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\User\\AppData\\Roaming\\firebase\\leaglel1910_gmail_com_application_default_credentials.json"}}
-[debug] [2025-09-28T01:06:06.110Z] Checked if tokens are valid: true, expires at: 1759025163903
-[debug] [2025-09-28T01:06:06.111Z] Checked if tokens are valid: true, expires at: 1759025163903
-[debug] [2025-09-28T01:06:06.111Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/localtour-backend/adminSdkConfig [none]
-[debug] [2025-09-28T01:06:06.604Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/localtour-backend/adminSdkConfig 200
-[debug] [2025-09-28T01:06:06.604Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/localtour-backend/adminSdkConfig {"projectId":"localtour-backend","storageBucket":"localtour-backend.firebasestorage.app"}
-[debug] [2025-09-28T01:06:06.616Z] Checked if tokens are valid: true, expires at: 1759025163903
-[debug] [2025-09-28T01:06:06.616Z] Checked if tokens are valid: true, expires at: 1759025163903
-[debug] [2025-09-28T01:06:06.616Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/localtour-backend/sites 
-[debug] [2025-09-28T01:06:08.092Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/localtour-backend/sites 200
-[debug] [2025-09-28T01:06:08.093Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/localtour-backend/sites {"sites":[{"name":"projects/localtour-backend/sites/localtour-backend","defaultUrl":"https://localtour-backend.web.app","appId":"1:475203221519:web:38550be305d3c89db78b7a","type":"DEFAULT_SITE"}]}
-[debug] [2025-09-28T01:06:08.093Z] Checked if tokens are valid: true, expires at: 1759025163903
-[debug] [2025-09-28T01:06:08.093Z] Checked if tokens are valid: true, expires at: 1759025163903
-[debug] [2025-09-28T01:06:08.093Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/localtour-backend/webApps/1:475203221519:web:38550be305d3c89db78b7a/config [none]
-[debug] [2025-09-28T01:06:08.874Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/localtour-backend/webApps/1:475203221519:web:38550be305d3c89db78b7a/config 200
-[debug] [2025-09-28T01:06:08.875Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/localtour-backend/webApps/1:475203221519:web:38550be305d3c89db78b7a/config {"projectId":"localtour-backend","appId":"1:475203221519:web:38550be305d3c89db78b7a","storageBucket":"localtour-backend.firebasestorage.app","apiKey":"AIzaSyDWpFnvqFQGknT7vcQqfILyFMIiacvUwvg","authDomain":"localtour-backend.firebaseapp.com","messagingSenderId":"475203221519","measurementId":"G-RHCN5R40SP"}
-[debug] [2025-09-28T01:06:08.883Z] Checked if tokens are valid: true, expires at: 1759025163903
-[debug] [2025-09-28T01:06:08.883Z] Checked if tokens are valid: true, expires at: 1759025163903
-[debug] [2025-09-28T01:06:08.883Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/localtour-backend [none]
-[debug] [2025-09-28T01:06:09.407Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/localtour-backend 200
-[debug] [2025-09-28T01:06:09.407Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/localtour-backend {"projectId":"localtour-backend","projectNumber":"475203221519","displayName":"Localtour-backend","name":"projects/localtour-backend","resources":{"hostingSite":"localtour-backend"},"state":"ACTIVE","etag":"1_725ef9dd-2849-4f90-8d25-7604e2d7e355"}
+[debug] [2025-09-30T21:01:54.357Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-09-30T21:01:54.357Z] > authorizing via signed-in user (leaglel1910@gmail.com)
+[debug] [2025-09-30T21:01:54.438Z] java version "21.0.8" 2025-07-15 LTS
+Java(TM) SE Runtime Environment (build 21.0.8+12-LTS-250)
+
+[debug] [2025-09-30T21:01:54.439Z] Java HotSpot(TM) 64-Bit Server VM (build 21.0.8+12-LTS-250, mixed mode, sharing)
+
+[debug] [2025-09-30T21:01:54.463Z] Parsed Java major version: 21
+[info] i  emulators: Starting emulators: auth, functions, firestore, hosting, pubsub, storage, extensions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, functions, firestore, hosting, pubsub, storage, extensions"}}
+[debug] [2025-09-30T21:01:54.465Z] Checked if tokens are valid: true, expires at: 1759269251414
+[debug] [2025-09-30T21:01:54.465Z] Checked if tokens are valid: true, expires at: 1759269251414
+[debug] [2025-09-30T21:01:54.466Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/localtour-backend [none]
+[debug] [2025-09-30T21:01:55.610Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/localtour-backend 200
+[debug] [2025-09-30T21:01:55.610Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/localtour-backend {"projectNumber":"475203221519","projectId":"localtour-backend","lifecycleState":"ACTIVE","name":"Localtour-backend","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-09-23T20:19:35.270466Z"}
+[debug] [2025-09-30T21:01:55.622Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-09-30T21:01:55.622Z] [auth] Authentication Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-09-30T21:01:55.622Z] [firestore] Firestore Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-09-30T21:01:55.622Z] [firestore.websocket] websocket server for firestore only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-09-30T21:01:55.622Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-09-30T21:01:55.622Z] [pubsub] Pub/Sub Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-09-30T21:01:55.622Z] [storage] Storage Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-09-30T21:01:55.622Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"auth":[{"address":"127.0.0.1","family":"IPv4","port":9099}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"pubsub":[{"address":"127.0.0.1","family":"IPv4","port":8085}],"storage":[{"address":"127.0.0.1","family":"IPv4","port":9199}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2025-09-30T21:01:55.628Z] Emulator locator file path: C:\Users\User\AppData\Local\Temp\hub-localtour-backend.json
+[debug] [2025-09-30T21:01:55.628Z] [hub] writing locator at C:\Users\User\AppData\Local\Temp\hub-localtour-backend.json
+[debug] [2025-09-30T21:01:55.638Z] [Extensions] Started Extensions emulator, this is a noop.
+[debug] [2025-09-30T21:01:55.642Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-09-30T21:01:55.642Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-09-30T21:01:55.642Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-09-30T21:01:55.642Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"auth":[{"address":"127.0.0.1","family":"IPv4","port":9099}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"pubsub":[{"address":"127.0.0.1","family":"IPv4","port":8085}],"storage":[{"address":"127.0.0.1","family":"IPv4","port":9199}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: apphosting, database, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mapphosting, database, dataconnect\u001b[22m"}}
+[debug] [2025-09-30T21:01:55.655Z] defaultcredentials: writing to file C:\Users\User\AppData\Roaming\firebase\leaglel1910_gmail_com_application_default_credentials.json
+[debug] [2025-09-30T21:01:55.656Z] Setting GAC to C:\Users\User\AppData\Roaming\firebase\leaglel1910_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\User\\AppData\\Roaming\\firebase\\leaglel1910_gmail_com_application_default_credentials.json"}}
+[debug] [2025-09-30T21:01:55.656Z] Checked if tokens are valid: true, expires at: 1759269251414
+[debug] [2025-09-30T21:01:55.656Z] Checked if tokens are valid: true, expires at: 1759269251414
+[debug] [2025-09-30T21:01:55.656Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/localtour-backend/adminSdkConfig [none]
+[debug] [2025-09-30T21:01:56.344Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/localtour-backend/adminSdkConfig 200
+[debug] [2025-09-30T21:01:56.344Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/localtour-backend/adminSdkConfig {"projectId":"localtour-backend","storageBucket":"localtour-backend.firebasestorage.app"}
+[debug] [2025-09-30T21:01:56.370Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2025-09-30T21:01:56.370Z] Ignoring unsupported arg: single_project_mode_error {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: single_project_mode_error"}}
+[debug] [2025-09-30T21:01:56.371Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","C:\\Users\\User\\.cache\\firebase\\emulators\\cloud-firestore-emulator-v1.19.8.jar","--host","127.0.0.1","--port",8080,"--websocket_port",9150,"--project_id","localtour-backend","--rules","C:\\Users\\User\\localtour-backend\\firestore.rules","--single_project_mode",true,"--functions_emulator","127.0.0.1:5001"],"optionalArgs":["port","webchannel_port","host","rules","websocket_port","functions_emulator","seed_from_export","project_id","single_project_mode"],"joinArgs":false,"shell":false,"port":8080} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\User\\\\.cache\\\\firebase\\\\emulators\\\\cloud-firestore-emulator-v1.19.8.jar\",\"--host\",\"127.0.0.1\",\"--port\",8080,\"--websocket_port\",9150,\"--project_id\",\"localtour-backend\",\"--rules\",\"C:\\\\Users\\\\User\\\\localtour-backend\\\\firestore.rules\",\"--single_project_mode\",true,\"--functions_emulator\",\"127.0.0.1:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"websocket_port\",\"functions_emulator\",\"seed_from_export\",\"project_id\",\"single_project_mode\"],\"joinArgs\":false,\"shell\":false,\"port\":8080}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[info] +  firestore: Firestore Emulator UI websocket is running on 9150. {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator UI websocket is running on 9150."}}
+[debug] [2025-09-30T21:02:02.723Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"pubsub"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2025-09-30T21:02:02.723Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"pubsub"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2025-09-30T21:02:02.723Z] Starting Pub/Sub Emulator with command {"binary":"C:\\Users\\User\\.cache\\firebase\\emulators\\pubsub-emulator-0.8.14\\pubsub-emulator\\bin\\cloud-pubsub-emulator","args":["--host=127.0.0.1","--port=8085"],"optionalArgs":["port","host"],"joinArgs":true,"shell":true,"port":8085} {"metadata":{"emulator":{"name":"pubsub"},"message":"Starting Pub/Sub Emulator with command {\"binary\":\"C:\\\\Users\\\\User\\\\.cache\\\\firebase\\\\emulators\\\\pubsub-emulator-0.8.14\\\\pubsub-emulator\\\\bin\\\\cloud-pubsub-emulator\",\"args\":[\"--host=127.0.0.1\",\"--port=8085\"],\"optionalArgs\":[\"port\",\"host\"],\"joinArgs\":true,\"shell\":true,\"port\":8085}"}}
+[info] i  pubsub: Pub/Sub Emulator logging to pubsub-debug.log {"metadata":{"emulator":{"name":"pubsub"},"message":"Pub/Sub Emulator logging to \u001b[1mpubsub-debug.log\u001b[22m"}}
+[debug] [2025-09-30T21:02:03.979Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"storage"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2025-09-30T21:02:04.719Z] Temp file directory for storage emulator: C:\Users\User\AppData\Local\Temp/firebase/storage/blobs {"metadata":{"emulator":{"name":"storage"},"message":"Temp file directory for storage emulator: C:\\Users\\User\\AppData\\Local\\Temp/firebase/storage/blobs"}}
+[debug] [2025-09-30T21:02:04.722Z] Checked if tokens are valid: true, expires at: 1759269251414
+[debug] [2025-09-30T21:02:04.722Z] Checked if tokens are valid: true, expires at: 1759269251414
+[debug] [2025-09-30T21:02:04.723Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/localtour-backend/sites 
+[debug] [2025-09-30T21:02:06.062Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/localtour-backend/sites 200
+[debug] [2025-09-30T21:02:06.063Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/localtour-backend/sites {"sites":[{"name":"projects/localtour-backend/sites/localtour-backend","defaultUrl":"https://localtour-backend.web.app","appId":"1:475203221519:web:38550be305d3c89db78b7a","type":"DEFAULT_SITE"}]}
+[debug] [2025-09-30T21:02:06.063Z] Checked if tokens are valid: true, expires at: 1759269251414
+[debug] [2025-09-30T21:02:06.063Z] Checked if tokens are valid: true, expires at: 1759269251414
+[debug] [2025-09-30T21:02:06.064Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/localtour-backend/webApps/1:475203221519:web:38550be305d3c89db78b7a/config [none]
+[debug] [2025-09-30T21:02:07.136Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/localtour-backend/webApps/1:475203221519:web:38550be305d3c89db78b7a/config 200
+[debug] [2025-09-30T21:02:07.136Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/localtour-backend/webApps/1:475203221519:web:38550be305d3c89db78b7a/config {"projectId":"localtour-backend","appId":"1:475203221519:web:38550be305d3c89db78b7a","storageBucket":"localtour-backend.firebasestorage.app","apiKey":"AIzaSyDWpFnvqFQGknT7vcQqfILyFMIiacvUwvg","authDomain":"localtour-backend.firebaseapp.com","messagingSenderId":"475203221519","measurementId":"G-RHCN5R40SP"}
+[debug] [2025-09-30T21:02:07.144Z] Checked if tokens are valid: true, expires at: 1759269251414
+[debug] [2025-09-30T21:02:07.144Z] Checked if tokens are valid: true, expires at: 1759269251414
+[debug] [2025-09-30T21:02:07.145Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/localtour-backend [none]
+[debug] [2025-09-30T21:02:07.490Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/localtour-backend 200
+[debug] [2025-09-30T21:02:07.491Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/localtour-backend {"projectId":"localtour-backend","projectNumber":"475203221519","displayName":"Localtour-backend","name":"projects/localtour-backend","resources":{"hostingSite":"localtour-backend"},"state":"ACTIVE","etag":"1_725ef9dd-2849-4f90-8d25-7604e2d7e355"}
 [info] i  hosting[localtour-backend]: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
 [info] +  hosting[localtour-backend]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
-[info] i  ui: downloading ui-v1.15.0.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.15.0.zip..."}}
-[debug] [2025-09-28T01:06:09.431Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.15.0.zip 
-[debug] [2025-09-28T01:06:09.837Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.15.0.zip 200
-[debug] [2025-09-28T01:06:09.838Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.15.0.zip [stream]
-[debug] [2025-09-28T01:06:10.813Z] Data is 3538469
-[debug] [2025-09-28T01:06:10.813Z] [unzip] Entry: client/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
-[debug] [2025-09-28T01:06:10.813Z] [unzip] Processing entry: client\
-[debug] [2025-09-28T01:06:10.814Z] [unzip] mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\
-[debug] [2025-09-28T01:06:10.814Z] [unzip] Entry: client/favicon-16x16.png (compressed_size=293 bytes, uncompressed_size=293 bytes)
-[debug] [2025-09-28T01:06:10.814Z] [unzip] Processing entry: client\favicon-16x16.png
-[debug] [2025-09-28T01:06:10.814Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client
-[debug] [2025-09-28T01:06:10.814Z] [unzip] Writing file: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\favicon-16x16.png
-[debug] [2025-09-28T01:06:10.815Z] [unzip] Entry: client/safari-pinned-tab.svg (compressed_size=1433 bytes, uncompressed_size=2611 bytes)
-[debug] [2025-09-28T01:06:10.815Z] [unzip] Processing entry: client\safari-pinned-tab.svg
-[debug] [2025-09-28T01:06:10.815Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client
-[debug] [2025-09-28T01:06:10.815Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\safari-pinned-tab.svg
-[debug] [2025-09-28T01:06:10.819Z] [unzip] Entry: client/favicon.ico (compressed_size=2933 bytes, uncompressed_size=13294 bytes)
-[debug] [2025-09-28T01:06:10.819Z] [unzip] Processing entry: client\favicon.ico
-[debug] [2025-09-28T01:06:10.819Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client
-[debug] [2025-09-28T01:06:10.819Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\favicon.ico
-[debug] [2025-09-28T01:06:10.821Z] [unzip] Entry: client/index.html (compressed_size=1364 bytes, uncompressed_size=3071 bytes)
-[debug] [2025-09-28T01:06:10.821Z] [unzip] Processing entry: client\index.html
-[debug] [2025-09-28T01:06:10.821Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client
-[debug] [2025-09-28T01:06:10.821Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\index.html
-[debug] [2025-09-28T01:06:10.822Z] [unzip] Entry: client/android-chrome-192x192.png (compressed_size=2684 bytes, uncompressed_size=2684 bytes)
-[debug] [2025-09-28T01:06:10.822Z] [unzip] Processing entry: client\android-chrome-192x192.png
-[debug] [2025-09-28T01:06:10.822Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client
-[debug] [2025-09-28T01:06:10.822Z] [unzip] Writing file: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\android-chrome-192x192.png
-[debug] [2025-09-28T01:06:10.823Z] [unzip] Entry: client/apple-touch-icon.png (compressed_size=2123 bytes, uncompressed_size=2152 bytes)
-[debug] [2025-09-28T01:06:10.823Z] [unzip] Processing entry: client\apple-touch-icon.png
-[debug] [2025-09-28T01:06:10.823Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client
-[debug] [2025-09-28T01:06:10.823Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\apple-touch-icon.png
-[debug] [2025-09-28T01:06:10.825Z] [unzip] Entry: client/android-chrome-512x512.png (compressed_size=5369 bytes, uncompressed_size=5411 bytes)
-[debug] [2025-09-28T01:06:10.826Z] [unzip] Processing entry: client\android-chrome-512x512.png
-[debug] [2025-09-28T01:06:10.826Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client
-[debug] [2025-09-28T01:06:10.826Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\android-chrome-512x512.png
-[debug] [2025-09-28T01:06:10.828Z] [unzip] Entry: client/manifest.json (compressed_size=245 bytes, uncompressed_size=551 bytes)
-[debug] [2025-09-28T01:06:10.828Z] [unzip] Processing entry: client\manifest.json
-[debug] [2025-09-28T01:06:10.828Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client
-[debug] [2025-09-28T01:06:10.828Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\manifest.json
-[debug] [2025-09-28T01:06:10.830Z] [unzip] Entry: client/robots.txt (compressed_size=26 bytes, uncompressed_size=26 bytes)
-[debug] [2025-09-28T01:06:10.830Z] [unzip] Processing entry: client\robots.txt
-[debug] [2025-09-28T01:06:10.830Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client
-[debug] [2025-09-28T01:06:10.830Z] [unzip] Writing file: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\robots.txt
-[debug] [2025-09-28T01:06:10.831Z] [unzip] Entry: client/mstile-150x150.png (compressed_size=2034 bytes, uncompressed_size=2034 bytes)
-[debug] [2025-09-28T01:06:10.831Z] [unzip] Processing entry: client\mstile-150x150.png
-[debug] [2025-09-28T01:06:10.831Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client
-[debug] [2025-09-28T01:06:10.831Z] [unzip] Writing file: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\mstile-150x150.png
-[debug] [2025-09-28T01:06:10.832Z] [unzip] Entry: client/assets/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
-[debug] [2025-09-28T01:06:10.832Z] [unzip] Processing entry: client\assets\
-[debug] [2025-09-28T01:06:10.832Z] [unzip] mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\assets\
-[debug] [2025-09-28T01:06:10.832Z] [unzip] Entry: client/assets/index-BX-A56oj.js (compressed_size=582089 bytes, uncompressed_size=2092775 bytes)
-[debug] [2025-09-28T01:06:10.832Z] [unzip] Processing entry: client\assets\index-BX-A56oj.js
-[debug] [2025-09-28T01:06:10.832Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\assets
-[debug] [2025-09-28T01:06:10.832Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\assets\index-BX-A56oj.js
-[debug] [2025-09-28T01:06:10.841Z] [unzip] Entry: client/assets/index-CjB9C900.css (compressed_size=35979 bytes, uncompressed_size=298654 bytes)
-[debug] [2025-09-28T01:06:10.842Z] [unzip] Processing entry: client\assets\index-CjB9C900.css
-[debug] [2025-09-28T01:06:10.842Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\assets
-[debug] [2025-09-28T01:06:10.842Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\assets\index-CjB9C900.css
-[debug] [2025-09-28T01:06:10.844Z] [unzip] Entry: client/assets/index-BX-A56oj.js.map (compressed_size=2362482 bytes, uncompressed_size=10036679 bytes)
-[debug] [2025-09-28T01:06:10.844Z] [unzip] Processing entry: client\assets\index-BX-A56oj.js.map
-[debug] [2025-09-28T01:06:10.844Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\assets
-[debug] [2025-09-28T01:06:10.844Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\assets\index-BX-A56oj.js.map
-[debug] [2025-09-28T01:06:10.876Z] [unzip] Entry: client/assets/extensions/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
-[debug] [2025-09-28T01:06:10.877Z] [unzip] Processing entry: client\assets\extensions\
-[debug] [2025-09-28T01:06:10.877Z] [unzip] mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\assets\extensions\
-[debug] [2025-09-28T01:06:10.877Z] [unzip] Entry: client/assets/extensions/default-extension.png (compressed_size=1646 bytes, uncompressed_size=1657 bytes)
-[debug] [2025-09-28T01:06:10.877Z] [unzip] Processing entry: client\assets\extensions\default-extension.png
-[debug] [2025-09-28T01:06:10.877Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\assets\extensions
-[debug] [2025-09-28T01:06:10.877Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\assets\extensions\default-extension.png
-[debug] [2025-09-28T01:06:10.878Z] [unzip] Entry: client/assets/img/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
-[debug] [2025-09-28T01:06:10.879Z] [unzip] Processing entry: client\assets\img\
-[debug] [2025-09-28T01:06:10.879Z] [unzip] mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\assets\img\
-[debug] [2025-09-28T01:06:10.879Z] [unzip] Entry: client/assets/img/database.png (compressed_size=29449 bytes, uncompressed_size=29988 bytes)
-[debug] [2025-09-28T01:06:10.879Z] [unzip] Processing entry: client\assets\img\database.png
-[debug] [2025-09-28T01:06:10.879Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\assets\img
-[debug] [2025-09-28T01:06:10.879Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\assets\img\database.png
-[debug] [2025-09-28T01:06:10.880Z] [unzip] Entry: client/assets/provider-icons/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
-[debug] [2025-09-28T01:06:10.880Z] [unzip] Processing entry: client\assets\provider-icons\
-[debug] [2025-09-28T01:06:10.880Z] [unzip] mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\
-[debug] [2025-09-28T01:06:10.880Z] [unzip] Entry: client/assets/provider-icons/auth_service_saml.svg (compressed_size=575 bytes, uncompressed_size=1226 bytes)
-[debug] [2025-09-28T01:06:10.880Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_saml.svg
-[debug] [2025-09-28T01:06:10.881Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
-[debug] [2025-09-28T01:06:10.881Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_saml.svg
-[debug] [2025-09-28T01:06:10.881Z] [unzip] Entry: client/assets/provider-icons/auth_service_phone.svg (compressed_size=261 bytes, uncompressed_size=414 bytes)
-[debug] [2025-09-28T01:06:10.881Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_phone.svg
-[debug] [2025-09-28T01:06:10.881Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
-[debug] [2025-09-28T01:06:10.882Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_phone.svg
-[debug] [2025-09-28T01:06:10.882Z] [unzip] Entry: client/assets/provider-icons/auth_service_facebook.svg (compressed_size=289 bytes, uncompressed_size=457 bytes)
-[debug] [2025-09-28T01:06:10.882Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_facebook.svg
-[debug] [2025-09-28T01:06:10.882Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
-[debug] [2025-09-28T01:06:10.883Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_facebook.svg
-[debug] [2025-09-28T01:06:10.883Z] [unzip] Entry: client/assets/provider-icons/auth_service_game_center.svg (compressed_size=991 bytes, uncompressed_size=3921 bytes)
-[debug] [2025-09-28T01:06:10.884Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_game_center.svg
-[debug] [2025-09-28T01:06:10.884Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
-[debug] [2025-09-28T01:06:10.884Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_game_center.svg
-[debug] [2025-09-28T01:06:10.885Z] [unzip] Entry: client/assets/provider-icons/auth_service_apple.svg (compressed_size=230 bytes, uncompressed_size=334 bytes)
-[debug] [2025-09-28T01:06:10.885Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_apple.svg
-[debug] [2025-09-28T01:06:10.885Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
-[debug] [2025-09-28T01:06:10.885Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_apple.svg
-[debug] [2025-09-28T01:06:10.886Z] [unzip] Entry: client/assets/provider-icons/auth_service_github.svg (compressed_size=466 bytes, uncompressed_size=838 bytes)
-[debug] [2025-09-28T01:06:10.886Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_github.svg
-[debug] [2025-09-28T01:06:10.886Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
-[debug] [2025-09-28T01:06:10.886Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_github.svg
-[debug] [2025-09-28T01:06:10.887Z] [unzip] Entry: client/assets/provider-icons/auth_service_mslive.svg (compressed_size=203 bytes, uncompressed_size=378 bytes)
-[debug] [2025-09-28T01:06:10.887Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_mslive.svg
-[debug] [2025-09-28T01:06:10.887Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
-[debug] [2025-09-28T01:06:10.887Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_mslive.svg
-[debug] [2025-09-28T01:06:10.888Z] [unzip] Entry: client/assets/provider-icons/auth_service_yahoo.svg (compressed_size=577 bytes, uncompressed_size=1182 bytes)
-[debug] [2025-09-28T01:06:10.888Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_yahoo.svg
-[debug] [2025-09-28T01:06:10.888Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
-[debug] [2025-09-28T01:06:10.889Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_yahoo.svg
-[debug] [2025-09-28T01:06:10.890Z] [unzip] Entry: client/assets/provider-icons/auth_service_twitter.svg (compressed_size=444 bytes, uncompressed_size=751 bytes)
-[debug] [2025-09-28T01:06:10.890Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_twitter.svg
-[debug] [2025-09-28T01:06:10.890Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
-[debug] [2025-09-28T01:06:10.890Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_twitter.svg
-[debug] [2025-09-28T01:06:10.891Z] [unzip] Entry: client/assets/provider-icons/auth_service_play_games.svg (compressed_size=565 bytes, uncompressed_size=1173 bytes)
-[debug] [2025-09-28T01:06:10.891Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_play_games.svg
-[debug] [2025-09-28T01:06:10.891Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
-[debug] [2025-09-28T01:06:10.891Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_play_games.svg
-[debug] [2025-09-28T01:06:10.892Z] [unzip] Entry: client/assets/provider-icons/auth_service_email.svg (compressed_size=228 bytes, uncompressed_size=326 bytes)
-[debug] [2025-09-28T01:06:10.892Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_email.svg
-[debug] [2025-09-28T01:06:10.892Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
-[debug] [2025-09-28T01:06:10.892Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_email.svg
-[debug] [2025-09-28T01:06:10.893Z] [unzip] Entry: client/assets/provider-icons/auth_service_google.svg (compressed_size=409 bytes, uncompressed_size=720 bytes)
-[debug] [2025-09-28T01:06:10.893Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_google.svg
-[debug] [2025-09-28T01:06:10.893Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
-[debug] [2025-09-28T01:06:10.893Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_google.svg
-[debug] [2025-09-28T01:06:10.894Z] [unzip] Entry: client/assets/provider-icons/auth_service_oidc.svg (compressed_size=414 bytes, uncompressed_size=858 bytes)
-[debug] [2025-09-28T01:06:10.894Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_oidc.svg
-[debug] [2025-09-28T01:06:10.894Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
-[debug] [2025-09-28T01:06:10.894Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_oidc.svg
-[debug] [2025-09-28T01:06:10.895Z] [unzip] Entry: client/browserconfig.xml (compressed_size=491 bytes, uncompressed_size=822 bytes)
-[debug] [2025-09-28T01:06:10.895Z] [unzip] Processing entry: client\browserconfig.xml
-[debug] [2025-09-28T01:06:10.895Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client
-[debug] [2025-09-28T01:06:10.895Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\browserconfig.xml
-[debug] [2025-09-28T01:06:10.896Z] [unzip] Entry: client/favicon-32x32.png (compressed_size=475 bytes, uncompressed_size=475 bytes)
-[debug] [2025-09-28T01:06:10.896Z] [unzip] Processing entry: client\favicon-32x32.png
-[debug] [2025-09-28T01:06:10.896Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client
-[debug] [2025-09-28T01:06:10.896Z] [unzip] Writing file: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\client\favicon-32x32.png
-[debug] [2025-09-28T01:06:10.897Z] [unzip] Entry: server/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
-[debug] [2025-09-28T01:06:10.897Z] [unzip] Processing entry: server\
-[debug] [2025-09-28T01:06:10.897Z] [unzip] mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\server\
-[debug] [2025-09-28T01:06:10.897Z] [unzip] Entry: server/server.mjs.map (compressed_size=217845 bytes, uncompressed_size=944978 bytes)
-[debug] [2025-09-28T01:06:10.897Z] [unzip] Processing entry: server\server.mjs.map
-[debug] [2025-09-28T01:06:10.897Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\server
-[debug] [2025-09-28T01:06:10.897Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\server\server.mjs.map
-[debug] [2025-09-28T01:06:10.901Z] [unzip] Entry: server/server.mjs (compressed_size=276407 bytes, uncompressed_size=933701 bytes)
-[debug] [2025-09-28T01:06:10.901Z] [unzip] Processing entry: server\server.mjs
-[debug] [2025-09-28T01:06:10.901Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\server
-[debug] [2025-09-28T01:06:10.901Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.15.0\server\server.mjs
-[debug] [2025-09-28T01:06:10.908Z] [Extensions] Connecting Extensions emulator, this is a noop.
+[debug] [2025-09-30T21:02:07.516Z] [Extensions] Connecting Extensions emulator, this is a noop.
 [info] i  functions: Watching "C:\Users\User\localtour-backend\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\User\\localtour-backend\\functions\" for Cloud Functions..."}}
-[debug] [2025-09-28T01:06:10.915Z] Validating nodejs source
-[debug] [2025-09-28T01:06:11.838Z] > [functions] package.json contents: {
+[debug] [2025-09-30T21:02:07.522Z] Validating nodejs source
+[debug] [2025-09-30T21:02:08.430Z] > [functions] package.json contents: {
   "name": "functions",
   "description": "Cloud Functions for Firebase",
   "scripts": {
@@ -231,37 +97,51 @@
   },
   "private": true
 }
-[debug] [2025-09-28T01:06:11.839Z] Building nodejs source
-[debug] [2025-09-28T01:06:11.839Z] Failed to find version of module node: reached end of search path C:\Users\User\localtour-backend\functions\node_modules
+[debug] [2025-09-30T21:02:08.431Z] Building nodejs source
+[debug] [2025-09-30T21:02:08.431Z] Failed to find version of module node: reached end of search path C:\Users\User\localtour-backend\functions\node_modules
 [info] +  functions: Using node@22 from host. 
-[debug] [2025-09-28T01:06:11.842Z] Could not find functions.yaml. Must use http discovery
-[debug] [2025-09-28T01:06:11.848Z] Found firebase-functions binary at 'C:\Users\User\localtour-backend\functions\node_modules\.bin\firebase-functions'
-[info] Serving at port 8198
+[debug] [2025-09-30T21:02:08.433Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-09-30T21:02:08.439Z] Found firebase-functions binary at 'C:\Users\User\localtour-backend\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8851
 
-[debug] [2025-09-28T01:06:12.624Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
-[debug] [2025-09-28T01:06:16.657Z] defaultcredentials: writing to file C:\Users\User\AppData\Roaming\firebase\leaglel1910_gmail_com_application_default_credentials.json
-[debug] [2025-09-28T01:06:16.658Z] Setting GAC to C:\Users\User\AppData\Roaming\firebase\leaglel1910_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\User\\AppData\\Roaming\\firebase\\leaglel1910_gmail_com_application_default_credentials.json"}}
+[debug] [2025-09-30T21:02:09.197Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[debug] [2025-09-30T21:02:13.222Z] defaultcredentials: writing to file C:\Users\User\AppData\Roaming\firebase\leaglel1910_gmail_com_application_default_credentials.json
+[debug] [2025-09-30T21:02:13.223Z] Setting GAC to C:\Users\User\AppData\Roaming\firebase\leaglel1910_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\User\\AppData\\Roaming\\firebase\\leaglel1910_gmail_com_application_default_credentials.json"}}
 [info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
-[debug] [2025-09-28T01:06:16.663Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] i  functions: Watching "C:\Users\User\localtour-backend\python_functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\User\\localtour-backend\\python_functions\" for Cloud Functions..."}}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: could not deploy functions because the "python_functions" directory was not found. Please create it or specify a different source directory in firebase.json {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: could not deploy functions because the \u001b[1m\"python_functions\"\u001b[22m directory was not found. Please create it or specify a different source directory in firebase.json"}}
+[debug] [2025-09-30T21:02:13.230Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
 [info] 
 ┌─────────────────────────────────────────────────────────────┐
 │ ✔  All emulators ready! It is now safe to connect your app. │
 │ i  View Emulator UI at http://127.0.0.1:4000/               │
 └─────────────────────────────────────────────────────────────┘
 
-┌────────────┬────────────────┬──────────────────────────────────┐
-│ Emulator   │ Host:Port      │ View in Emulator UI              │
-├────────────┼────────────────┼──────────────────────────────────┤
-│ Functions  │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions  │
-├────────────┼────────────────┼──────────────────────────────────┤
-│ Hosting    │ 127.0.0.1:5000 │ n/a                              │
-├────────────┼────────────────┼──────────────────────────────────┤
-│ Extensions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/extensions │
-└────────────┴────────────────┴──────────────────────────────────┘
+┌────────────────┬────────────────┬──────────────────────────────────┐
+│ Emulator       │ Host:Port      │ View in Emulator UI              │
+├────────────────┼────────────────┼──────────────────────────────────┤
+│ Authentication │ 127.0.0.1:9099 │ http://127.0.0.1:4000/auth       │
+├────────────────┼────────────────┼──────────────────────────────────┤
+│ Functions      │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions  │
+├────────────────┼────────────────┼──────────────────────────────────┤
+│ Firestore      │ 127.0.0.1:8080 │ http://127.0.0.1:4000/firestore  │
+├────────────────┼────────────────┼──────────────────────────────────┤
+│ Hosting        │ 127.0.0.1:5000 │ n/a                              │
+├────────────────┼────────────────┼──────────────────────────────────┤
+│ Pub/Sub        │ 127.0.0.1:8085 │ n/a                              │
+├────────────────┼────────────────┼──────────────────────────────────┤
+│ Storage        │ 127.0.0.1:9199 │ http://127.0.0.1:4000/storage    │
+├────────────────┼────────────────┼──────────────────────────────────┤
+│ Extensions     │ 127.0.0.1:5001 │ http://127.0.0.1:4000/extensions │
+└────────────────┴────────────────┴──────────────────────────────────┘
   Emulator Hub host: 127.0.0.1 port: 4400
-  Other reserved ports: 4500
+  Other reserved ports: 4500, 9150
 ┌─────────────────────────┬───────────────┬─────────────────────┐
 │ Extension Instance Name │ Extension Ref │ View in Emulator UI │
 └─────────────────────────┴───────────────┴─────────────────────┘
 Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
  
+[debug] [2025-09-30T21:03:13.491Z] >>> [apiv2][query] POST http://127.0.0.1:5001/functions/projects/localtour-backend/trigger_multicast [none]
+[debug] [2025-09-30T21:03:13.491Z] >>> [apiv2][body] POST http://127.0.0.1:5001/functions/projects/localtour-backend/trigger_multicast {"eventId":"54361446-7bc3-416c-96f8-c127588e2025","eventType":"providers/firebase.auth/eventTypes/user.create","resource":{"name":"projects/localtour-backend","service":"firebaseauth.googleapis.com"},"params":{},"timestamp":"2025-09-30T21:03:13.490Z","data":{"uid":"PxMd55bTnOhwx5S7odusp2aenjja","email":"panda.olive.701@example.com","emailVerified":true,"displayName":"Panda Olive","metadata":{"creationTime":"2025-09-30T21:03:13.489Z","lastSignInTime":"2025-09-30T21:03:13.489Z"},"customClaims":{},"providerData":[{"rawId":"0046577332559505196366082145744120817775","providerId":"google.com","displayName":"Panda Olive","email":"panda.olive.701@example.com","federatedId":"0046577332559505196366082145744120817775","screenName":"olive_panda"}]}}
+[debug] [2025-09-30T21:03:13.500Z] <<< [apiv2][status] POST http://127.0.0.1:5001/functions/projects/localtour-backend/trigger_multicast 200
+[debug] [2025-09-30T21:03:13.500Z] <<< [apiv2][body] POST http://127.0.0.1:5001/functions/projects/localtour-backend/trigger_multicast {"status":"multicast_acknowledged"}
