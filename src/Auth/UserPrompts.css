@@ -1,0 +1,26 @@
+.user-prompts {
+  margin-top: 20px;
+}
+
+.prompt-input {
+  display: flex;
+  gap: 10px;
+}
+
+.prompt-input input {
+  padding: 8px;
+  width: 70%;
+}
+
+.prompt-input button {
+  padding: 8px;
+}
+
+.prompts-list {
+  margin-top: 20px;
+}
+
+.prompt-item {
+  margin-bottom: 15px;
+}
+
