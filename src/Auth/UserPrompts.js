@@ -21,15 +21,24 @@ function UserPrompts() {
       setPrompts([...prompts, { question: promptInput, answer: 'Loading...' }]);
       
       try {
-        // Get answer from Gemini
-        const response = await fetch(
-          `http://127.0.0.1:5001/localtour-backend/us-central1/ask_gemini?prompt=${encodeURIComponent(promptInput)}`
-        );
-        const answer = await response.text();
+        // Use different URLs for development vs production
+        const askGeminiUrl = process.env.NODE_ENV === 'development' 
+          ? 'http://127.0.0.1:5001/localtour-backend/us-central1/ask_gemini'
+          : 'https://ask-gemini-rps5274z2q-uc.a.run.app';
         
-        // Extract hints from answer
+        const extractHintsUrl = process.env.NODE_ENV === 'development' 
+          ? 'http://127.0.0.1:5001/localtour-backend/us-central1/extract_hints'
+          : 'https://extract-hints-rps5274z2q-uc.a.run.app';
+        
+        // Get full answer from Gemini
+        const answerResponse = await fetch(
+          `${askGeminiUrl}?prompt=${encodeURIComponent(promptInput)}`
+        );
+        const answer = await answerResponse.text();
+        
+        // Extract hints from the answer
         const hintsResponse = await fetch(
-          `http://127.0.0.1:5001/localtour-backend/us-central1/extract_hints?answer=${encodeURIComponent(answer)}`
+          `${extractHintsUrl}?answer=${encodeURIComponent(answer)}`
         );
         const hints = await hintsResponse.text();
         

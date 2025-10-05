@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import Homepage from './Homepage';
 import './App.css';
+import './firebase';
 
 function App() {
   return (
