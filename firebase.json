@@ -21,6 +21,18 @@
         "*.local"
       ],
       "source": "python_functions"
+    },
+    {
+      "codebase": "python_real_functions",
+      "ignore": [
+        "venv",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ],
+      "source": "python_real_functions",
+      "runtime": "python313"
     }
   ],
   "hosting": {

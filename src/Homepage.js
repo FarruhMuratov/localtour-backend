@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { auth, googleProvider, signInWithPopup, signInWithPhoneNumber, RecaptchaVerifier } from './firebase.js';
+import Dashboard from './Auth/Dashboard';
 
 function Homepage() {
   const [user, setUser] = useState(null);
@@ -40,9 +41,7 @@ function Homepage() {
       <h1>Authentication</h1>
       
       {user ? (
-        <div>
-          <p>Welcome, {user.displayName || user.phoneNumber}</p>
-        </div>
+        <Dashboard user={user} />
       ) : (
         <div>
           <button onClick={handleGoogleSignIn} style={{ display: 'block', margin: '10px 0' }}>
