@@ -23,7 +23,8 @@ import {
   connectFirestoreEmulator
 } from "firebase/firestore";
 import { getFunctions, connectFunctionsEmulator } from "firebase/functions";
-import { getStorage, connectStorageEmulator } from "firebase/storage";
+import { getStorage, connectStorageEmulator, ref, uploadBytes, getDownloadURL } from "firebase/storage";
+import { updateProfile } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -73,5 +74,9 @@ export {
   isSignInWithEmailLink,     // Add new
   signInWithEmailLink,       // Add new
   onAuthStateChanged,
-  getRedirectResult
+  getRedirectResult,
+  ref,              
+  uploadBytes,      
+  getDownloadURL,   
+  updateProfile
 };
