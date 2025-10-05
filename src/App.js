@@ -1,13 +1,22 @@
-// import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import { LanguageProvider } from './context/LanguageContext';
+import { WishlistProvider } from './context/WishlistContext';
 import Homepage from './Homepage';
 import './App.css';
 import './firebase';
 
 function App() {
   return (
-    <div className="App">
-      <Homepage />
-    </div>
+    <BrowserRouter>
+      <LanguageProvider>
+        <WishlistProvider>
+          <div className="App">
+            <Homepage />
+          </div>
+        </WishlistProvider>
+      </LanguageProvider>
+    </BrowserRouter>
   );
 }
 

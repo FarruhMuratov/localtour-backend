@@ -37,13 +37,12 @@ function Homepage() {
   };
 
   return (
-    <div style={{ padding: '20px', maxWidth: '400px', margin: '0 auto' }}>
-      <h1>Authentication</h1>
-      
+    <>
       {user ? (
         <Dashboard user={user} />
       ) : (
-        <div>
+        <div style={{ padding: '20px', maxWidth: '400px', margin: '0 auto' }}>
+          <h1>Authentication</h1>
           <button onClick={handleGoogleSignIn} style={{ display: 'block', margin: '10px 0' }}>
             Sign in with Google
           </button>
@@ -62,7 +61,7 @@ function Homepage() {
           <div id="recaptcha-container"></div>
         </div>
       )}
-    </div>
+    </>
   );
 }
 
