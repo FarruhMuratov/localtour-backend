@@ -1,0 +1,5 @@
+{
+  "name": "LocalRoam - Tour Marketplace",
+  "description": "A marketplace application connecting local tour partners with clients seeking unique travel experiences. Features separate interfaces for clients to browse tours and for partners to manage their service listings.",
+  "requestFramePermissions": []
+}

@@ -1,0 +1,19 @@
+{
+  "name": "UserPhotos/2EYogfyBPAkQjQQtfocskm7psm0P/image_2025-09-22_01-49-02.png",
+  "bucket": "localtour-backend.firebasestorage.app",
+  "metageneration": 1,
+  "generation": 1759679157389,
+  "contentType": "image/png",
+  "storageClass": "STANDARD",
+  "contentDisposition": "inline",
+  "downloadTokens": [
+    "dd487bfc-3e0a-4f93-8009-53e1e6eac184"
+  ],
+  "etag": "rcaJyZ1Gg1w/8+wek0QclgE6OwU",
+  "customMetadata": {},
+  "timeCreated": "2025-10-05T15:45:57.389Z",
+  "updated": "2025-10-05T15:45:57.389Z",
+  "size": 1905591,
+  "md5Hash": "42U9CLJajsmdgzV2c7x5AA==",
+  "crc32c": "1069111126"
+}
