@@ -1,0 +1,10 @@
+# Service Account Key
+serviceAccountKey.json
+
+# Environment variables
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
